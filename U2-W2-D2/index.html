@@ -31,22 +31,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" role="button" aria-disabled="false">Recdnsioni</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#collapsibleSection2">Saldi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Saldi</a>
+              <a class="nav-link" href="#collapsibleSection3">Welcomme Summer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Welcomme Summer</a>
+              <a class="nav-link" href="#collapsibleSection4">Last Minute</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Last Minute</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">REcensioni</a>
+              <a class="nav-link" role="button" aria-disabled="false" href="#FeedBack">Recensioni</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -59,7 +56,17 @@
 
     <!-- SOTTO LA NAV -->
     <div class="container mt-5 bg-body-tertiary rounded">
-      <div class="row mx-3">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleSection"
+        aria-expanded="false"
+        aria-controls="collapsibleSection"
+      >
+        Apri/Chiudi Sezione
+      </button>
+      <div class="row mx-3 collapse show" id="collapsibleSection">
         <div class="col-12 py-5">
           <p class="fs-1 d-inline bg-light">Eveline-R -</p>
           <p class="d-inline">Feel the Freedom</p>
@@ -73,8 +80,18 @@
     </div>
 
     <!-- sezione saldi -->
-    <div class="container mt-5">
-      <div class="row g-sm-3">
+    <div class="container">
+      <button
+        class="btn btn-primary mt-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleSection2"
+        aria-expanded="false"
+        aria-controls="collapsibleSection"
+      >
+        Apri/Chiudi Sezione
+      </button>
+      <div class="row g-sm-3 collapse show" id="collapsibleSection2">
         <div class="col-6 col-lg-3">
           <div class="card border border-info">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
@@ -130,9 +147,19 @@
       </div>
 
       <!-- Welcomme Summer -->
-      <div class="row g-3 mt-5">
+      <button
+        class="btn btn-primary mt-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleSection3"
+        aria-expanded="false"
+        aria-controls="collapsibleSection"
+      >
+        Apri/Chiudi Sezione
+      </button>
+      <div class="row g-3 collapse show" id="collapsibleSection3">
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -146,7 +173,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -160,7 +187,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -174,7 +201,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -188,7 +215,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -202,7 +229,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card">
+          <div class="card shadow-lg">
             <img src="./asset/img/villaggio.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -218,11 +245,21 @@
       </div>
 
       <!-- offerte del giorno -->
-      <div class="row mt-5">
-        <div class="col-md-8">
-          <img src="./asset/img/villaggio.png" alt="Viallaggio" class="rounded shadow-lg img-fluid" />
+      <button
+        class="btn btn-primary mt-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleSection4"
+        aria-expanded="false"
+        aria-controls="collapsibleSection"
+      >
+        Apri/Chiudi Sezione
+      </button>
+      <div class="row collapse show" id="collapsibleSection4">
+        <div class="col-md-8 d-none d-md-block">
+          <img src="./asset/img/villaggio.png" alt="Viallaggio" class="rounded shadow-sm img-fluid" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 d-none d-md-block">
           <div class="d-flex flex-column align-items-start gap-3">
             <h1 class="fs-1">Fushifaru Maldives</h1>
             <p class="font-monospace">15.01.2021-31.01.2021</p>
@@ -232,7 +269,18 @@
         </div>
       </div>
 
-      <div class="row mt-5 g-3">
+      <!-- FOOTER -->
+      <button
+        class="btn btn-primary mt-5"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleSection5"
+        aria-expanded="false"
+        aria-controls="collapsibleSection"
+      >
+        Apri/Chiudi Sezione
+      </button>
+      <div class="row g-3 collapse show" id="collapsibleSection5">
         <div class="col-md-6 col-lg-4 col-xl-2">
           <img src="./asset/img/villaggio.png" alt="Viallaggio" class="rounded img-fluid" />
         </div>
@@ -256,7 +304,7 @@
     </div>
 
     <div class="container my-5">
-      <div class="row text-center mb-4">
+      <div class="row text-center mb-4" id="FeedBack">
         <div class="col">
           <h2>Dicono di noi</h2>
         </div>
@@ -314,6 +362,38 @@
               asperiores temporibus, sunt, labore deleniti modi quam excepturi minus est, corporis aut aspernatur
               tempora quae ullam nobis.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mb-5">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContatto">
+        Contattaci
+      </button>
+    </div>
+    <!-- Modale -->
+    <div class="modal fade" id="modalContatto" tabindex="-1" aria-labelledby="modalContattoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalContattoLabel">Contattaci</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="formContatto">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Indirizzo Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="nome@example.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="messaggioTextarea" class="form-label">Il tuo Messaggio</label>
+                <textarea class="form-control" id="messaggioTextarea" rows="3" required></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+            <button type="submit" class="btn btn-primary" form="formContatto">Invia</button>
           </div>
         </div>
       </div>
